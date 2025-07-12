@@ -97,6 +97,7 @@ try {
     System.out.println(e.getMessage());
 }
 ```
+(./screenshots/img.png)
 
 Removes books published more than 20 years ago from the inventory.
 ```inventory.removeOutDatedBook(20);```
@@ -109,4 +110,5 @@ try {
     System.out.println(e.getMessage());
 }
 ```
+(./screenshots/img_1.png)
 
