@@ -90,19 +90,23 @@ Purchases the EBook and prints the payment confirmation(No shipping address requ
 ```double paid2 = inventory.buyBook("002", 1, "user@example.com", null);```
 
 Attempts to buy the demo book, which is not for sale(Catches and prints the exception message gracefully).
-```try {
+```
+try {
     inventory.buyBook("003", 1, "user@example.com", null);
 } catch (RuntimeException e) {
     System.out.println(e.getMessage());
-}```
+}
+```
 
 Removes books published more than 20 years ago from the inventory.
 ```inventory.removeOutDatedBook(20);```
 
 Tries to buy more paper books than available in stock(Triggers an error and confirms the system correctly prevents overselling).
-```try {
+```
+try {
     inventory.buyBook("001", 100, "user@example.com", "123 Main Street");
 } catch (RuntimeException e) {
     System.out.println(e.getMessage());
-}```
+}
+```
 
