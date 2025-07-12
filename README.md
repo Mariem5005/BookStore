@@ -77,19 +77,17 @@ A PaperBook with stock = 10
 An EBook with file type PDF
 A DemoBook that is not for sale
 ```Book paperBook = factory.createBook("Paper", "001", "Clean Code", 2008, 50.0, "Robert C. Martin", 10, null);```
-Book eBook = factory.createBook("Ebook", "002", "You Don't Know JS", 2015, 30.0, "Kyle Simpson", 0, "PDF");
-Book demoBook = factory.createBook("Demo", "003", "Old Wisdom", 1990, 0.0, "Unknown", 0, null);```
+```Book eBook = factory.createBook("Ebook", "002", "You Don't Know JS", 2015, 30.0, "Kyle Simpson", 0, "PDF");```
+```Book demoBook = factory.createBook("Demo", "003", "Old Wisdom", 1990, 0.0, "Unknown", 0, null);```
 
 Displays the current inventory with full details of each book.
 ```inventory.showInventory();```
 
 Purchases 2 copies of the paper book and prints the total amount paid.
-```double paid1 = inventory.buyBook("001", 2, "user@example.com", "123 Main Street");
-System.out.println("Quantum book store: Paid amount = $" + paid1);```
+```double paid1 = inventory.buyBook("001", 2, "user@example.com", "123 Main Street");```
 
 Purchases the EBook and prints the payment confirmation(No shipping address required for e-books).
-```double paid2 = inventory.buyBook("002", 1, "user@example.com", null);
-System.out.println("Quantum book store: Paid amount = $" + paid2);```
+```double paid2 = inventory.buyBook("002", 1, "user@example.com", null);```
 
 Attempts to buy the demo book, which is not for sale(Catches and prints the exception message gracefully).
 ```try {
