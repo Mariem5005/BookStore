@@ -78,7 +78,7 @@ An EBook with file type PDF
 A DemoBook that is not for sale
 ```Book paperBook = factory.createBook("Paper", "001", "Clean Code", 2008, 50.0, "Robert C. Martin", 10, null);
 Book eBook = factory.createBook("Ebook", "002", "You Don't Know JS", 2015, 30.0, "Kyle Simpson", 0, "PDF");
-Book demoBook = factory.createBook("Demo", "003", "Old Wisdom", 1990, 0.0, "Unknown", 0, null);```
+Book demoBook = factory.createBook("Demo", "003", "Old Wisdom", 1990, 0.0, "Unknown", 0, null);
 
 Displays the current inventory with full details of each book.
 ```inventory.showInventory();```
